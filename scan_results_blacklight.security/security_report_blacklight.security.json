@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "target": "blacklight.security",
+    "company": null,
+    "scan_date": "2025-03-20T20:28:31.703003"
+  },
+  "dns_records": {},
+  "subdomains": [],
+  "subipmap": {
+    "blacklight.security": [
+      "185.230.63.107",
+      "185.230.63.186",
+      "185.230.63.171"
+    ],
+    "www.blacklight.security": [
+      "34.149.87.45"
+    ]
+  },
+  "ip_addresses": [
+    "34.149.87.45",
+    "185.230.63.186",
+    "185.230.63.171",
+    "185.230.63.107"
+  ],
+  "vulnerabilities": {
+    "blacklight.security": {
+      "nikto": [
+        {
+          "host": "blacklight.security",
+          "ip": "185.230.63.171",
+          "port": "80",
+          "banner": "",
+          "vulnerabilities": [
+            {
+              "id": "999100",
+              "method": "GET",
+              "url": "/",
+              "msg": "Uncommon header(s) 'x-seen-by' found, with contents: dwc60INy8NFddnU/0WdlOB9slopJdhD+WySraMrpIY8=."
+            },
+            {
+              "id": "013587",
+              "references": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy",
+              "method": "GET",
+              "url": "/",
+              "msg": "Suggested security header missing: referrer-policy."
+            },
+            {
+              "id": "013587",
+              "references": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+              "method": "GET",
+              "url": "/",
+              "msg": "Suggested security header missing: content-security-policy."
+            },
+            {
+              "id": "013587",
+              "references": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy",
+              "method": "GET",
+              "url": "/",
+              "msg": "Suggested security header missing: permissions-policy."
+            },
+            {
+              "id": "013587",
+              "references": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security",
+              "method": "GET",
+              "url": "/",
+              "msg": "Suggested security header missing: strict-transport-security."
+            },
+            {
+              "id": "013587",
+              "references": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options",
+              "method": "GET",
+              "url": "/",
+              "msg": "Suggested security header missing: x-content-type-options."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "services": [],
+  "email_security": {
+    "dmarc": {
+      "Records": [],
+      "Errors": [],
+      "Warnings": [],
+      "Failed": [
+        {
+          "ID": 441,
+          "Name": "DMARC Record Published",
+          "Info": "No DMARC Record found",
+          "Url": "https://mxtoolbox.com/Problem/dmarc/DMARC-Record-Published?page=prob_dmarc&showlogin=1&hidetoc=1&action=dmarc:blacklight.security",
+          "PublicDescription": null,
+          "IsExcludedByUser": false
+        }
+      ],
+      "DnsServiceProvider": "Wixpress Ltd."
+    },
+    "spf": {
+      "Records": [
+        "v=spf1 include:_spf.google.com ~all"
+      ],
+      "Errors": [],
+      "Warnings": [],
+      "Failed": [],
+      "DnsServiceProvider": "Wixpress Ltd."
+    }
+  },
+  "darkweb": [],
+  "sensitive_info": [],
+  "credentials": [],
+  "screenshots": [
+    "scan_results_blacklight.security/screenshots_blacklight.security/blacklight.security.png",
+    "scan_results_blacklight.security/screenshots_blacklight.security/www.blacklight.security.png"
+  ],
+  "technologies": {
+    "blacklight.security": {
+      "status_code": "301",
+      "status_message": "Moved Permanently",
+      "details": {
+        "https://blacklight.security": "301 Moved Permanently",
+        "HTTPServer": "Pepyaka",
+        "IP": "185.230.63.171",
+        "RedirectLocation": "https://www.blacklight.security/",
+        "Strict-Transport-Security": "max-age=86400",
+        "UncommonHeaders": "x-wix-cache-control,server-timing,x-seen-by,x-wix-request-id,x-content-type-options"
+      }
+    }
+  },
+  "dns_resolved": true,
+  "port_scan": {
+    "blacklight.security": [
+      {
+        "address": "185.230.63.171",
+        "hostname": "unalocated.63.wixsite.com",
+        "ports": [
+          {
+            "port": "53",
+            "protocol": "tcp",
+            "state": "open",
+            "service": "domain",
+            "version": null,
+            "scripts": [
+              {
+                "id": "dns-nsid",
+                "output": "\n  NSID: \\x1F (1f)"
+              },
+              {
+                "id": "fingerprint-strings",
+                "output": "\n  DNSVersionBindReqTCP: \n    version\n    bind\n    root-servers\n    nstld\n    verisign-grs"
+              }
+            ]
+          },
+          {
+            "port": "80",
+            "protocol": "tcp",
+            "state": "open",
+            "service": "http",
+            "version": null,
+            "scripts": [
+              {
+                "id": "http-title",
+                "output": "Site doesn't have a title."
+              },
+              {
+                "id": "fingerprint-strings",
+                "output": "\n  FourOhFourRequest, RTSPRequest: \n    HTTP/1.0 403 Forbidden\n    X-Seen-By: 1ev8u3tblITHmgXkyGXE9h9slopJdhD+WySraMrpIY8=\n    Connection: close\n    Content-Length: 0\n  GetRequest: \n    HTTP/1.0 403 Forbidden\n    X-Seen-By: ui2Pjuc3zC1HEw7V2qXeyh9slopJdhD+WySraMrpIY8=\n    Connection: close\n    Content-Length: 0\n  HTTPOptions: \n    HTTP/1.0 403 Forbidden\n    X-Seen-By: dwc60INy8NFddnU/0WdlOB9slopJdhD+WySraMrpIY8=\n    Connection: close\n    Content-Length: 0\n  TerminalServerCookie: \n    HTTP/1.0 403 Forbidden\n    X-Seen-By: 9WD8GAcpJgs/Ng1WkD2i0h9slopJdhD+WySraMrpIY8=\n    Connection: close\n    Content-Length: 0"
+              }
+            ]
+          },
+          {
+            "port": "82",
+            "protocol": "tcp",
+            "state": "open",
+            "service": "xfer",
+            "version": null,
+            "scripts": []
+          }
+        ]
+      }
+    ]
+  },
+  "ipportmap": {
+    "185.230.63.171": [
+      "53",
+      "80",
+      "82"
+    ]
+  },
+  "tls_config": {
+    "blacklight.security": {
+      "grade": "A",
+      "warnings": false,
+      "status": "Ready"
+    },
+    "www.blacklight.security": {
+      "grade": "A",
+      "warnings": false,
+      "status": "Ready"
+    }
+  }
+}

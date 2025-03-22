@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Thu Mar 20 20:28:54 2025 as: nmap -vvv -p 53,82,80 -4 -oX scan_results_blacklight.security/blacklight.security_nmap_scan.xml -sV -sC -T4 185.230.63.171 -->
+<nmaprun scanner="nmap" args="nmap -vvv -p 53,82,80 -4 -oX scan_results_blacklight.security/blacklight.security_nmap_scan.xml -sV -sC -T4 185.230.63.171" start="1742455734" startstr="Thu Mar 20 20:28:54 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="53,80,82"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1742455734"/>
+<taskend task="NSE" time="1742455734"/>
+<taskbegin task="NSE" time="1742455734"/>
+<taskend task="NSE" time="1742455734"/>
+<taskbegin task="NSE" time="1742455734"/>
+<taskend task="NSE" time="1742455734"/>
+<taskbegin task="Ping Scan" time="1742455734"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="185.230.63.171" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1742455734" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1742455734"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1742455734"/>
+<taskbegin task="Connect Scan" time="1742455734"/>
+<taskend task="Connect Scan" time="1742455735" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1742455735"/>
+<taskend task="Service scan" time="1742455864" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1742455864"/>
+<taskend task="NSE" time="1742455882"/>
+<taskbegin task="NSE" time="1742455882"/>
+<taskend task="NSE" time="1742455884"/>
+<taskbegin task="NSE" time="1742455884"/>
+<taskend task="NSE" time="1742455884"/>
+<host starttime="1742455734" endtime="1742455884"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="185.230.63.171" addrtype="ipv4"/>
+<hostnames>
+<hostname name="unalocated.63.wixsite.com" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" extrainfo="generic dns response: NXDOMAIN" servicefp="SF-Port53-TCP:V=7.95%I=7%D=3/20%Time=67DBC3C1%P=x86_64-apple-darwin21.6.0%r(DNSVersionBindReqTCP,7B,&quot;\0y\0\x06\x81\x03\0\x01\0\0\0\x01\0\x01\x07version\x04bind\0\0\x10\0\x03\0\0\x06\0\x01\0\0\x0e\x10\0@\x01a\x0croot-servers\x03net\0\x05nstld\x0cverisign-grs\x03com\0x\xb3\x89@\0\0\x07\x08\0\0\x03\x84\0\t:\x80\0\x01Q\x80\0\0\)\x10\0\0\0\0\0\0\x05\xffy\0\x01\x1f&quot;);" method="probed" conf="10"/><script id="dns-nsid" output="&#xa;  NSID: \x1F (1f)"><table key="NSID">
+<elem key="hex">1f</elem>
+<elem key="raw">\x1F</elem>
+</table>
+</script><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP: &#xa;    version&#xa;    bind&#xa;    root-servers&#xa;    nstld&#xa;    verisign-grs"><elem key="DNSVersionBindReqTCP">&#xa;    version&#xa;    bind&#xa;    root-servers&#xa;    nstld&#xa;    verisign-grs</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.95%I=7%D=3/20%Time=67DBC3BD%P=x86_64-apple-darwin21.6.0%r(GetRequest,79,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nX-Seen-By:\x20ui2Pjuc3zC1HEw7V2qXeyh9slopJdhD\+WySraMrpIY8=\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n&quot;)%r(HTTPOptions,79,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nX-Seen-By:\x20dwc60INy8NFddnU/0WdlOB9slopJdhD\+WySraMrpIY8=\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RTSPRequest,79,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nX-Seen-By:\x201ev8u3tblITHmgXkyGXE9h9slopJdhD\+WySraMrpIY8=\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n&quot;)%r(FourOhFourRequest,79,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nX-Seen-By:\x201ev8u3tblITHmgXkyGXE9h9slopJdhD\+WySraMrpIY8=\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n&quot;)%r(TerminalServerCookie,79,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nX-Seen-By:\x209WD8GAcpJgs/Ng1WkD2i0h9slopJdhD\+WySraMrpIY8=\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n&quot;);" method="probed" conf="10"/><script id="http-title" output="Site doesn&apos;t have a title."></script><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, RTSPRequest: &#xa;    HTTP/1.0 403 Forbidden&#xa;    X-Seen-By: 1ev8u3tblITHmgXkyGXE9h9slopJdhD+WySraMrpIY8=&#xa;    Connection: close&#xa;    Content-Length: 0&#xa;  GetRequest: &#xa;    HTTP/1.0 403 Forbidden&#xa;    X-Seen-By: ui2Pjuc3zC1HEw7V2qXeyh9slopJdhD+WySraMrpIY8=&#xa;    Connection: close&#xa;    Content-Length: 0&#xa;  HTTPOptions: &#xa;    HTTP/1.0 403 Forbidden&#xa;    X-Seen-By: dwc60INy8NFddnU/0WdlOB9slopJdhD+WySraMrpIY8=&#xa;    Connection: close&#xa;    Content-Length: 0&#xa;  TerminalServerCookie: &#xa;    HTTP/1.0 403 Forbidden&#xa;    X-Seen-By: 9WD8GAcpJgs/Ng1WkD2i0h9slopJdhD+WySraMrpIY8=&#xa;    Connection: close&#xa;    Content-Length: 0"><elem key="FourOhFourRequest, RTSPRequest">&#xa;    HTTP/1.0 403 Forbidden&#xa;    X-Seen-By: 1ev8u3tblITHmgXkyGXE9h9slopJdhD+WySraMrpIY8=&#xa;    Connection: close&#xa;    Content-Length: 0</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 403 Forbidden&#xa;    X-Seen-By: ui2Pjuc3zC1HEw7V2qXeyh9slopJdhD+WySraMrpIY8=&#xa;    Connection: close&#xa;    Content-Length: 0</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 403 Forbidden&#xa;    X-Seen-By: dwc60INy8NFddnU/0WdlOB9slopJdhD+WySraMrpIY8=&#xa;    Connection: close&#xa;    Content-Length: 0</elem>
+<elem key="TerminalServerCookie">&#xa;    HTTP/1.0 403 Forbidden&#xa;    X-Seen-By: 9WD8GAcpJgs/Ng1WkD2i0h9slopJdhD+WySraMrpIY8=&#xa;    Connection: close&#xa;    Content-Length: 0</elem>
+</script></port>
+<port protocol="tcp" portid="82"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="xfer" method="table" conf="3"/></port>
+</ports>
+<times srtt="136016" rttvar="90845" to="499396"/>
+</host>
+<taskbegin task="NSE" time="1742455884"/>
+<taskend task="NSE" time="1742455884"/>
+<taskbegin task="NSE" time="1742455884"/>
+<taskend task="NSE" time="1742455884"/>
+<taskbegin task="NSE" time="1742455884"/>
+<taskend task="NSE" time="1742455884"/>
+<runstats><finished time="1742455884" timestr="Thu Mar 20 20:31:24 2025" summary="Nmap done at Thu Mar 20 20:31:24 2025; 1 IP address (1 host up) scanned in 149.85 seconds" elapsed="149.85" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

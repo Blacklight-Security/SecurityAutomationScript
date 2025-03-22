@@ -1,0 +1,1689 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE SCAN SYSTEM "https://qualysguard.qg1.apps.qualys.com.au/scan-1.dtd">
+<SCAN value="scan/1742364753.96161">
+
+<HEADER>
+  <KEY value="USERNAME">backg4dg</KEY>
+  <KEY value="COMPANY"><![CDATA[BlackLight]]></KEY>
+  <KEY value="DATE">2025-03-19T06:12:33Z</KEY>
+  <KEY value="TITLE"><![CDATA[Blacklight]]></KEY>
+  <KEY value="TARGET"><![CDATA[34.149.87.45, 185.230.63.107, 185.230.63.171, 185.230.63.186]]></KEY>
+  <KEY value="EXCLUDED_TARGET"><![CDATA[N/A]]></KEY>
+  <KEY value="DURATION">00:36:29</KEY>
+  <KEY value="SCAN_HOST">168.138.106.27 (Scanner 14.6.12-1, Vulnerability Signatures 2.6.279-2)</KEY>
+  <KEY value="NBHOST_ALIVE">4</KEY>
+  <KEY value="NBHOST_TOTAL">4</KEY>
+  <KEY value="REPORT_TYPE">On-demand (default option profile)</KEY>
+  <KEY value="OPTIONS"><![CDATA[parallel ML scaling enabled for appliances, Load balancer detection OFF, Intrusive Checks: Excluded, Windows Authentication ON, Unix Authentication ON, Ignore firewall-generated RST packets, Ignore firewall-generated SYN-ACK packets, Overall Performance: Normal, Hosts to Scan in Parallel - External Scanners: 15, Hosts to Scan in Parallel - Scanner Appliances: 30, Total Processes to Run in Parallel: 10, HTTP Processes to Run in Parallel: 10, Packet (Burst) Delay: Medium, Intensity: Normal]]></KEY>
+  <KEY value="STATUS">FINISHED</KEY>
+  <OPTION_PROFILE>
+    <OPTION_PROFILE_TITLE option_profile_default="1"><![CDATA[Qualys Recommended Option Profile]]></OPTION_PROFILE_TITLE>
+  </OPTION_PROFILE>
+</HEADER>
+
+<IP value="34.149.87.45" name="45.87.149.34.bc.googleusercontent.com">
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="6" severity="1">
+        <TITLE><![CDATA[DNS Host Name]]></TITLE>
+        <LAST_UPDATE><![CDATA[2018-01-04T17:39:37Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The fully qualified domain name of this host, if it was obtained from a DNS server, is displayed in the RESULT section.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[IP address	Host name
+34.149.87.45	45.87.149.34.bc.googleusercontent.com]]></RESULT>
+      </INFO>
+      <INFO number="45006" severity="1">
+        <TITLE><![CDATA[Traceroute]]></TITLE>
+        <LAST_UPDATE><![CDATA[2003-05-09T18:28:51Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Traceroute describes the path in realtime from the scanner to the remote host being contacted. It reports the IP addresses of all the routers in between.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Hops	IP	Round Trip Time	Probe	Port
+1	140.91.212.29	0.05ms	ICMP	 
+2	140.204.22.96	3.44ms	ICMP	 
+3	*.*.*.*	0.00ms	Other	80
+4	192.178.97.217	1.43ms	ICMP	 
+5	142.251.252.205	1.29ms	ICMP	 
+6	34.149.87.45	1.33ms	ICMP]]></RESULT>
+      </INFO>
+      <INFO number="45004" severity="1">
+        <TITLE><![CDATA[Target Network Information]]></TITLE>
+        <LAST_UPDATE><![CDATA[2013-08-15T21:12:37Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The information shown in the Result section was returned by the network infrastructure responsible for routing traffic from our cloud platform to the target network (where the scanner appliance is located).<P>
+This information was returned from: 1) the WHOIS service, or 2) the infrastructure provided by the closest gateway server to our cloud platform. If your ISP is routing traffic, your ISP's gateway server returned this information.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[This information can be used by malicious users to gather more information about the network infrastructure that may help in launching attacks against it.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[The network handle is: GOOGL-2
+Network description:
+Google LLC]]></RESULT>
+      </INFO>
+      <INFO number="45005" severity="1">
+        <TITLE><![CDATA[Internet Service Provider]]></TITLE>
+        <LAST_UPDATE><![CDATA[2013-09-27T19:31:33Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The information shown in the Result section was returned by the network infrastructure responsible for routing traffic from our cloud platform to the target network (where the scanner appliance is located). 
+
+<P>This information was returned from: 1) the WHOIS service, or 2) the infrastructure provided by the closest gateway server to our cloud platform. If your ISP is routing traffic, your ISP's gateway server returned this information.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[This information can be used by malicious users to gather more information about the network infrastructure that may aid in launching further attacks against it.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[The ISP network handle is: NET-140-204-0-0-2
+ISP Network description:
+Oracle Public Cloud OC-195]]></RESULT>
+      </INFO>
+      <INFO number="45039" severity="1">
+        <TITLE><![CDATA[Host Names Found]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-08-27T03:28:53Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The following host names were discovered for this computer using various methods such as DNS look up, NetBIOS query, and SQL server name query.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Host Name	Source
+45.87.149.34.bc.googleusercontent.com	FQDN]]></RESULT>
+      </INFO>
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time - Scanner]]></TITLE>
+        <LAST_UPDATE><![CDATA[2022-09-15T18:02:52Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Scan duration: 1735 seconds
+
+Start time: Wed, Mar 19 2025, 06:11:50 GMT
+
+End time: Wed, Mar 19 2025, 06:40:45 GMT]]></RESULT>
+      </INFO>
+      <INFO number="45426" severity="1">
+        <TITLE><![CDATA[Scan Activity per Port]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-06-24T12:42:21Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Scan activity per port is an estimate of the amount of internal process time the scanner engine spent scanning a particular TCP or UDP port. This information can be useful to determine the reason for long scan times. The individual time values represent internal process time, not elapsed time, and can be longer than the total scan time because of internal parallelism. High values are often caused by slowly responding services or services on which requests time out.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Protocol	Port	Time
+TCP	80	 2:55:48
+TCP	443	 0:02:21
+UDP	443	 0:00:07]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="TCP/IP">
+      <INFO number="82040" severity="1">
+        <TITLE><![CDATA[ICMP Replies Received]]></TITLE>
+        <LAST_UPDATE><![CDATA[2003-01-16T20:14:30Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[ICMP (Internet Control and Error Message Protocol) is a protocol encapsulated in IP packets. ICMP's principal purpose is to provide a protocol layer that informs gateways of the inter-connectivity and accessibility of other gateways or hosts. 
+<P>
+We have sent the following types of packets to trigger the host to send us ICMP replies: 
+<P>
+Echo Request (to trigger Echo Reply)<br>
+Timestamp Request (to trigger Timestamp Reply)<br>
+Address Mask Request (to trigger Address Mask Reply)<br>
+UDP Packet (to trigger Port Unreachable Reply)<br>
+IP Packet with Protocol >= 250 (to trigger Protocol Unreachable Reply)
+<P>
+Listed in the "Result" section are the ICMP replies that we have received.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[ICMP Reply Type	Triggered By	Additional Information
+Echo (type=0 code=0)	Echo Request	Echo Reply
+Unreachable (type=3 code=3)	UDP Port 456	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 4590	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 123	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 15406	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 5401	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 1604	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 520	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 1028	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 5321	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 6771	Port Unreachable]]></RESULT>
+      </INFO>
+      <INFO number="82046" severity="1">
+        <TITLE><![CDATA[IP ID Values Randomness]]></TITLE>
+        <LAST_UPDATE><![CDATA[2006-07-27T21:45:19Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The values for the identification (ID) field in IP headers in IP packets from the host are analyzed to determine how random they are. The changes between subsequent ID values for either the network byte ordering or the host byte ordering, whichever is smaller, are displayed in the RESULT section along with the duration taken to send the probes. When incremental values are used, as is the case for TCP/IP implementation in many operating systems, these changes reflect the network load of the host at the time this test was conducted.
+<P>
+Please note that for reliability reasons only the network traffic from open TCP ports is analyzed.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[IP ID changes observed (network order) for port 80: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Duration: 13 milli seconds]]></RESULT>
+      </INFO>
+      <INFO number="82045" severity="1">
+        <TITLE><![CDATA[Degree of Randomness of TCP Initial Sequence Numbers]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-11-19T21:53:59Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[TCP Initial Sequence Numbers (ISNs) obtained in the SYNACK replies from the host are analyzed to determine how random they are. The average change between subsequent ISNs and the standard deviation from the average are displayed in the RESULT section. Also included is the degree of difficulty for exploitation of the TCP ISN generation scheme used by the host.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Average change between subsequent TCP initial sequence numbers is 1086367533 with a standard deviation of 602968280. These TCP initial sequence numbers were triggered by TCP SYN probes sent to the host at an average rate of 1/(5089 microseconds). The degree of difficulty to exploit the TCP initial sequence number generation scheme is: hard.]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Forensics">
+      <INFO number="125001" severity="3">
+        <TITLE><![CDATA[RPC Portmapper Information]]></TITLE>
+        <LAST_UPDATE><![CDATA[2024-01-10T12:13:45Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <CVE_ID_LIST>
+          <CVE_ID>
+            <ID><![CDATA[CVE-1999-0632]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-0632]]></URL>
+          </CVE_ID>
+        </CVE_ID_LIST>
+        <DIAGNOSIS><![CDATA[The result section shows the information received by making an RPC call to the portmapper on the target host. It shows the list of all registered RPC programs.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Check to be sure that the information reported adheres to your security policy.]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[RPC detected on UDP port 443.]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="CGI" port="80" protocol="tcp">
+      <INFO number="12230" severity="1">
+        <TITLE><![CDATA[Default Web Page]]></TITLE>
+        <LAST_UPDATE><![CDATA[2019-03-16T03:30:26Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Result section displays the default Web page for the Web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[GET / HTTP/1.1
+Host: 45.87.149.34.bc.googleusercontent.com
+Connection: Keep-Alive
+
+
+
+&lt;!doctype html&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=viewport content=&quot;width=device-width, initial-scale=1&quot;&gt;&lt;title&gt;429&lt;/title&gt;429 Too Many Requests]]></RESULT>
+      </INFO>
+      <INFO number="13910" severity="1">
+        <TITLE><![CDATA[Default Web Page ( Follow HTTP Redirection)]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-11-05T13:13:22Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Result section displays the default Web page for the Web server following HTTP redirections.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[GET / HTTP/1.1
+Host: 45.87.149.34.bc.googleusercontent.com
+Connection: Keep-Alive
+
+
+
+&lt;!doctype html&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=viewport content=&quot;width=device-width, initial-scale=1&quot;&gt;&lt;title&gt;429&lt;/title&gt;429 Too Many Requests]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Web server" port="80" protocol="tcp">
+      <INFO number="86672" severity="1">
+        <TITLE><![CDATA[List of Web Directories]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-09-10T23:40:57Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Based largely on the HTTP reply code, the following directories are most likely present on the host.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Directory	Source
+/administrator/components/com_hikashop/	brute force
+js/	brute force
+CMS/	brute force
+cms/	brute force]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Information gathering" port="80" protocol="tcp">
+      <INFO number="45266" severity="2">
+        <TITLE><![CDATA[Web Server HTTP Protocol Versions]]></TITLE>
+        <LAST_UPDATE><![CDATA[2024-10-02T12:23:02Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID lists supported HTTP protocol (HTTP 1.x or HTTP 2) from remote web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Remote Web Server supports HTTP version 1.x on 80 port.GET / HTTP/1.1]]></RESULT>
+      </INFO>
+      <INFO number="48118" severity="1">
+        <TITLE><![CDATA[HTTP Response Method and Header Information Collected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-07-20T12:24:23Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID prints the information, in the form of a text record, that a web server sends back to a client's browser in response to receiving a single HTTP GET request. <P>
+QID Detection Logic:<BR>
+This QID returns the HTTP response method and header information returned by a web server.<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A<P>]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A<P>]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[HTTP header and method information collected on port 80.
+
+GET / HTTP/1.1
+Host: 45.87.149.34.bc.googleusercontent.com
+Connection: Keep-Alive
+
+
+
+HTTP/1.1 429 Too Many Requests
+content-type: text/html; charset=UTF-8
+Content-Length: 142
+via: 1.1 google
+date: Wed, 19 Mar 2025 06:22:41 GMT
+glb-x-seen-by: bS8wRlGzu0Hc+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+  <SERVICES>
+    <CAT value="TCP/IP">
+      <SERVICE number="82023" severity="1">
+        <TITLE><![CDATA[Open TCP Services List]]></TITLE>
+        <LAST_UPDATE><![CDATA[2024-12-19T13:22:09Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The port scanner enables unauthorized users with the appropriate tools to draw a map of all services on this host that can be accessed from the Internet.  The test was carried out with a &quot;stealth&quot; port scanner so that the server does not log real connections.
+<P>
+The Results section displays the port number (Port), the default service listening on the port (IANA Assigned Ports/Services), the description of the service (Description) and the service that the scanner detected using service discovery (Service Detected).]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Unauthorized users can exploit this information to test vulnerabilities in each of the open services.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Shut down any unknown or unused service on the list.  If you have difficulty figuring out which service is provided by which process or program, contact your provider's support team.  For more information about commercial and open-source Intrusion Detection Systems available for detecting port scanners of this kind, visit the <A HREF="http://www.cert.org" TARGET="_blank">CERT Web site</A>.]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Port	IANA Assigned Ports/Services	Description	Service Detected	OS On Redirected Port
+80	www-http	World Wide Web HTTP	proxy http 	 
+443	https	http protocol over TLS/SSL	unknown]]></RESULT>
+      </SERVICE>
+      <SERVICE number="82004" severity="1">
+        <TITLE><![CDATA[Open UDP Services List]]></TITLE>
+        <LAST_UPDATE><![CDATA[2005-07-11T22:36:34Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[A port scanner was used to draw a map of all the UDP services on this host that can be accessed from the Internet.
+<P>
+Note that if the host is behind a firewall, there is a small chance that the list includes a few ports that are filtered or blocked by the firewall but are not actually open on the target host. This (false positive on UDP open ports) may happen when the firewall is configured to reject UDP packets for most (but not all) ports with an ICMP Port Unreachable packet. This may also happen when the firewall is configured to allow UDP packets for most (but not all) ports through and filter/block/drop UDP packets for only a few ports. Both cases are uncommon.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Unauthorized users can exploit this information to test vulnerabilities in each of the open services.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Shut down any unknown or unused service on the list.  If you have difficulty working out which service is provided by which process or program, contact your provider's support team.  For more information about commercial and open-source Intrusion Detection Systems available for detecting port scanners of this kind, visit the <A HREF="http://www.cert.org" TARGET="_blank">CERT Web site</A>.]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Port	IANA Assigned Ports/Services	Description	Service Detected
+443	https	http protocol over TLS/SSL	unknown]]></RESULT>
+      </SERVICE>
+    </CAT>
+    <CAT value="Firewall">
+      <SERVICE number="34011" severity="1">
+        <TITLE><![CDATA[Firewall Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2019-04-22T02:37:57Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[A packet filtering device protecting this IP was detected. This is likely to be a firewall or a router using access control lists (ACLs).]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Some of the ports filtered by the firewall are: 20, 21, 22, 23, 25, 53, 111, 135, 445, 1.
+
+Listed below are the ports filtered by the firewall.
+No response has been received when any of these ports are probed.
+1-3,5,7,9,11,13,15,17-25,27,29,31,33,35,37-39,41-79,81-223,242-246,256-265,
+280-282,309,311,318,322-325,344-351,363,369-381,383-442,444-581,587,592-593,
+598,600,606-620,624,627,631,633-637,666-674,700,704-705,707,709-711,729-731,
+740-742,744,747-754,758-765,767,769-777,780-783,786,799-801,860,873,886-888,
+900-901,911,950,954-955,990-993,995-1001,1008,1010-1011,1015,1023-1100,
+1109-1112,1114,1123,1155,1167,1170,1207,1212,1214,1220-1222,1234-1236,
+1241,1243,1245,1248,1269,1313-1314,1337,1344-1625,1636-1774,1776-1815,
+1818-1824,1900-1909,1911-1920,1944-1951,1973,1981,1985-2028,2030,2032-2036,
+2038,2040-2049,2053,2065,2067,2080,2097,2100,2102-2107,2109, and more.
+We have omitted from this list 702 higher ports to keep the report size manageable.]]></RESULT>
+      </SERVICE>
+    </CAT>
+  </SERVICES>
+  <VULNS>
+    <CAT value="TCP/IP">
+      <VULN number="82024" severity="2" cveid="CVE-2002-0510">
+        <TITLE><![CDATA[UDP Constant IP Identification Field Fingerprinting Vulnerability]]></TITLE>
+        <LAST_UPDATE><![CDATA[2008-05-07T18:23:49Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <CVE_ID_LIST>
+          <CVE_ID>
+            <ID><![CDATA[CVE-2002-0510]]></ID>
+            <URL><![CDATA[http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0510]]></URL>
+          </CVE_ID>
+        </CVE_ID_LIST>
+        <BUGTRAQ_ID_LIST>
+          <BUGTRAQ_ID>
+            <ID><![CDATA[4314]]></ID>
+            <URL><![CDATA[http://www.securityfocus.com/bid/4314]]></URL>
+          </BUGTRAQ_ID>
+        </BUGTRAQ_ID_LIST>
+        <DIAGNOSIS><![CDATA[The host transmits UDP packets with a constant IP Identification field. This behavior may be exploited to discover the operating system and approximate kernel version of the vulnerable system.
+<P>
+Normally, the IP Identification field is intended to be a reasonably unique value, and is used to reconstruct fragmented packets. It has been reported that in some versions of the Linux kernel IP stack implementation as well as other operating systems, UDP packets are transmitted with a constant IP Identification field of 0.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[By exploiting this vulnerability, a malicious user can discover the operating system and approximate kernel version of the host. This information can then be used in further attacks against the host.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[We are not currently aware of any fixes for this issue.]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[IP_ID=0]]></RESULT>
+      </VULN>
+    </CAT>
+  </VULNS>
+  <PRACTICES>
+    <CAT value="General remote services">
+      <PRACTICE number="42432" severity="1">
+        <TITLE><![CDATA[Possible Scan Interference]]></TITLE>
+        <LAST_UPDATE><![CDATA[2022-05-25T06:42:07Z]]></LAST_UPDATE>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Possible scan interference detected.<P>
+A PCI scan must be allowed to perform scanning without interference from intrusion detection systems or intrusion prevention systems. <BR>
+The PCI ASV is required to post fail if scan interference is detected. 
+<P>
+The goal of this QID is to ensure that Active Protection Systems are not blocking, filtering, dropping or modifying network packets from a PCI Certified Scan, as such behavior could affect an ASV's ability to detect vulnerabilities. Active Protection Systems could include any of the following; IPS, WAF, Firewall, NGF, QoS Device, Spam Filter, etc. which are dynamically modifying their behavior based on info gathered from traffic patterns. This QID is triggered if a well known and popular service is not identified correctly due to possible scan interference. Services like FTP, SSH, Telnet, DNS, HTTP and Database services like MSSQL, Oracle, MySql are included.
+<P>
+-If an Active Protection System is found to be preventing the scan from completing, Merchants should make the required changes (e.g. whitelist) so that the ASV scan can complete unimpeded.
+ <P>
+-If the scan was not actively blocked, Merchants can submit a PCI False Positive/Exception Request with a statement asserting that No Active Protection System is present or blocking the scan.
+<P>
+Additionally, if there is no risk to the Cardholder Data Environment, such as no web service running, this can also be submitted as a PCI False Positive/Exception Request and reviewed per the standard PCI Workflow.
+<P>
+For more details on scan interference during a PCI scan please refer to <B>ASV Scan Interference</B> section of <A HREF="https://www.pcisecuritystandards.org/documents/ASV_Program_Guide_v3.1.pdf?agreement=true&time=1611566661151" TARGET="_blank">PCI DSS Approved Scanning Vendors Program Guide Version 3.1 July 2018 </A>.
+
+For more details about this QID, please review the following Qualys KB article:<BR>
+<A HREF="https://success.qualys.com/support/s/article/000001874#:~:text=Due%20to%20the%20above%20requirement,ASV's%20ability%20to%20detect%20vulnerabilities" TARGET="_blank"></A><P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[If the scanner cannot detect vulnerabilities on Internet-facing systems because the scan is blocked by an IDS/IPS, those vulnerabilities will remain uncorrected and may be exploited if the IDS/IPS changes or fails.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Whitelist the Qualys scanner to scan without interference from the IDS or IPS.
+<P>]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Service name: Unknown - Possible Scan Interference on TCP port 443.]]></RESULT>
+      </PRACTICE>
+    </CAT>
+  </PRACTICES>
+</IP>
+<IP value="185.230.63.107" name="unalocated.63.wixsite.com">
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="6" severity="1">
+        <TITLE><![CDATA[DNS Host Name]]></TITLE>
+        <LAST_UPDATE><![CDATA[2018-01-04T17:39:37Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The fully qualified domain name of this host, if it was obtained from a DNS server, is displayed in the RESULT section.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[IP address	Host name
+185.230.63.107	unalocated.63.wixsite.com]]></RESULT>
+      </INFO>
+      <INFO number="45006" severity="1">
+        <TITLE><![CDATA[Traceroute]]></TITLE>
+        <LAST_UPDATE><![CDATA[2003-05-09T18:28:51Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Traceroute describes the path in realtime from the scanner to the remote host being contacted. It reports the IP addresses of all the routers in between.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Hops	IP	Round Trip Time	Probe	Port
+1	140.91.212.42	0.27ms	ICMP	 
+2	43.241.189.30	0.89ms	ICMP	 
+3	43.241.189.29	1.45ms	ICMP	 
+4	*.*.*.*	0.00ms	Other	80
+5	114.31.199.41	143.13ms	ICMP	 
+6	213.248.98.78	143.52ms	ICMP	 
+7	62.115.132.153	160.84ms	ICMP	 
+8	80.239.128.3	166.46ms	ICMP	 
+9	*.*.*.*	0.00ms	Other	80
+10	185.230.63.107	162.55ms	UDP	80]]></RESULT>
+      </INFO>
+      <INFO number="45004" severity="1">
+        <TITLE><![CDATA[Target Network Information]]></TITLE>
+        <LAST_UPDATE><![CDATA[2013-08-15T21:12:37Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The information shown in the Result section was returned by the network infrastructure responsible for routing traffic from our cloud platform to the target network (where the scanner appliance is located).<P>
+This information was returned from: 1) the WHOIS service, or 2) the infrastructure provided by the closest gateway server to our cloud platform. If your ISP is routing traffic, your ISP's gateway server returned this information.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[This information can be used by malicious users to gather more information about the network infrastructure that may help in launching attacks against it.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[The network handle is: RIPE-185
+Network description:
+RIPE Network Coordination Centre]]></RESULT>
+      </INFO>
+      <INFO number="45005" severity="1">
+        <TITLE><![CDATA[Internet Service Provider]]></TITLE>
+        <LAST_UPDATE><![CDATA[2013-09-27T19:31:33Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The information shown in the Result section was returned by the network infrastructure responsible for routing traffic from our cloud platform to the target network (where the scanner appliance is located). 
+
+<P>This information was returned from: 1) the WHOIS service, or 2) the infrastructure provided by the closest gateway server to our cloud platform. If your ISP is routing traffic, your ISP's gateway server returned this information.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[This information can be used by malicious users to gather more information about the network infrastructure that may aid in launching further attacks against it.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[The ISP network handle is: DE-ARELION
+ISP Network description:
+Provider Arelion Sweden AB]]></RESULT>
+      </INFO>
+      <INFO number="45039" severity="1">
+        <TITLE><![CDATA[Host Names Found]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-08-27T03:28:53Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The following host names were discovered for this computer using various methods such as DNS look up, NetBIOS query, and SQL server name query.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Host Name	Source
+unalocated.63.wixsite.com	FQDN]]></RESULT>
+      </INFO>
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time - Scanner]]></TITLE>
+        <LAST_UPDATE><![CDATA[2022-09-15T18:02:52Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Scan duration: 2017 seconds
+
+Start time: Wed, Mar 19 2025, 06:11:50 GMT
+
+End time: Wed, Mar 19 2025, 06:45:27 GMT]]></RESULT>
+      </INFO>
+      <INFO number="45426" severity="1">
+        <TITLE><![CDATA[Scan Activity per Port]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-06-24T12:42:21Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Scan activity per port is an estimate of the amount of internal process time the scanner engine spent scanning a particular TCP or UDP port. This information can be useful to determine the reason for long scan times. The individual time values represent internal process time, not elapsed time, and can be longer than the total scan time because of internal parallelism. High values are often caused by slowly responding services or services on which requests time out.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Protocol	Port	Time
+TCP	80	 3:22:12
+TCP	82	 0:02:57
+TCP	443	 0:01:00
+TCP	445	 0:04:27]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="TCP/IP">
+      <INFO number="82040" severity="1">
+        <TITLE><![CDATA[ICMP Replies Received]]></TITLE>
+        <LAST_UPDATE><![CDATA[2003-01-16T20:14:30Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[ICMP (Internet Control and Error Message Protocol) is a protocol encapsulated in IP packets. ICMP's principal purpose is to provide a protocol layer that informs gateways of the inter-connectivity and accessibility of other gateways or hosts. 
+<P>
+We have sent the following types of packets to trigger the host to send us ICMP replies: 
+<P>
+Echo Request (to trigger Echo Reply)<br>
+Timestamp Request (to trigger Timestamp Reply)<br>
+Address Mask Request (to trigger Address Mask Reply)<br>
+UDP Packet (to trigger Port Unreachable Reply)<br>
+IP Packet with Protocol >= 250 (to trigger Protocol Unreachable Reply)
+<P>
+Listed in the "Result" section are the ICMP replies that we have received.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[ICMP Reply Type	Triggered By	Additional Information
+Unreachable (type=3 code=3)	UDP Port 456	Port Unreachable
+Echo (type=0 code=0)	Echo Request	Echo Reply
+Unreachable (type=3 code=3)	UDP Port 1	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 15406	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 4590	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 123	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 5401	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 1604	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 520	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 1028	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 5321	Port Unreachable
+Unreachable (type=3 code=9)	(Various)	Destination Network Prohibited]]></RESULT>
+      </INFO>
+      <INFO number="82046" severity="1">
+        <TITLE><![CDATA[IP ID Values Randomness]]></TITLE>
+        <LAST_UPDATE><![CDATA[2006-07-27T21:45:19Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The values for the identification (ID) field in IP headers in IP packets from the host are analyzed to determine how random they are. The changes between subsequent ID values for either the network byte ordering or the host byte ordering, whichever is smaller, are displayed in the RESULT section along with the duration taken to send the probes. When incremental values are used, as is the case for TCP/IP implementation in many operating systems, these changes reflect the network load of the host at the time this test was conducted.
+<P>
+Please note that for reliability reasons only the network traffic from open TCP ports is analyzed.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[IP ID changes observed (network order) for port 80: 233 415 435 1208 1426 3094 3674 3805 5793 6530 7401 9857 11287 15323 18480 19856 20092 22104 22667 25684 27890 33258 33258 33258 33258 33258 33258 33258 33258 
+Duration: 33 milli seconds]]></RESULT>
+      </INFO>
+      <INFO number="82063" severity="2">
+        <TITLE><![CDATA[Host Uptime Based on TCP TimeStamp Option]]></TITLE>
+        <LAST_UPDATE><![CDATA[2007-05-29T18:56:36Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The TCP/IP stack on the host supports the TCP TimeStamp (kind 8) option. Typically the timestamp used is the host's uptime (since last reboot) in various units (e.g., one hundredth of second, one tenth of a second, etc.). Based on this, we can obtain the host's uptime. The result is given in the Result section below.
+<P>
+Some operating systems (e.g., MacOS, OpenBSD) use a non-zero, probably random, initial value for the timestamp. For these operating systems, the uptime obtained does not reflect the actual uptime of the host; the former is always larger than the latter.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Based on TCP timestamps obtained via port 80, the host&apos;s uptime is 33 days, 14 hours, and 50 minutes.
+The TCP timestamps from the host are in units of 1 milliseconds.]]></RESULT>
+      </INFO>
+      <INFO number="82045" severity="1">
+        <TITLE><![CDATA[Degree of Randomness of TCP Initial Sequence Numbers]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-11-19T21:53:59Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[TCP Initial Sequence Numbers (ISNs) obtained in the SYNACK replies from the host are analyzed to determine how random they are. The average change between subsequent ISNs and the standard deviation from the average are displayed in the RESULT section. Also included is the degree of difficulty for exploitation of the TCP ISN generation scheme used by the host.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Average change between subsequent TCP initial sequence numbers is 51231270 with a standard deviation of 32527826. These TCP initial sequence numbers were triggered by TCP SYN probes sent to the host at an average rate of 1/(5098 microseconds). The degree of difficulty to exploit the TCP initial sequence number generation scheme is: hard.]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="CGI" port="80" protocol="tcp">
+      <INFO number="12230" severity="1">
+        <TITLE><![CDATA[Default Web Page]]></TITLE>
+        <LAST_UPDATE><![CDATA[2019-03-16T03:30:26Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Result section displays the default Web page for the Web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[GET / HTTP/1.1
+Host: unalocated.63.wixsite.com
+Connection: Keep-Alive
+
+
+
+HTTP/1.1 301 Moved Permanently
+Location: https://unalocated.63.wixsite.com/
+X-Seen-By: 1ev8u3tblITHmgXkyGXE9h9slopJdhD+WySraMrpIY8=
+Connection: close
+Content-Length: 0]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Web server" port="80" protocol="tcp">
+      <INFO number="86672" severity="1">
+        <TITLE><![CDATA[List of Web Directories]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-09-10T23:40:57Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Based largely on the HTTP reply code, the following directories are most likely present on the host.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Directory	Source
+/phorum 5.2-dev/	brute force
+/Web analytics/	brute force]]></RESULT>
+      </INFO>
+      <INFO number="86565" severity="1">
+        <TITLE><![CDATA[Web Server Supports HTTP Request Pipelining]]></TITLE>
+        <LAST_UPDATE><![CDATA[2005-02-23T00:25:38Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Version 1.1 of the HTTP protocol supports URL-Request Pipelining. This means that instead of using the &quot;Keep-Alive&quot; method to keep the TCP connection alive over multiple requests, the protocol allows multiple HTTP URL requests to be made in the same TCP packet. Any Web server which is HTTP 1.1 compliant should then process all the URLs requested in the single TCP packet and respond as usual.
+<P>
+The target Web server was found to support this functionality of the HTTP 1.1 protocol.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Support for URL-Request Pipelining has interesting consequences. For example, as explained in <A HREF="http://www.defcon.org/images/defcon-11/dc-11-presentations/dc-11-Roelker/dc-11-roelker-paper.pdf" TARGET="_blank">this paper by Daniel Roelker</A>, it can be used for evading detection by Intrusion Detection Systems. Also, it can be used in HTTP Response-Spliting style attacks.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[GET / HTTP/1.1
+Host:185.230.63.107:80
+
+GET /Q_Evasive/ HTTP/1.1
+Host:185.230.63.107:80
+
+
+
+HTTP/1.1 403 Forbidden
+X-Seen-By: dwc60INy8NFddnU/0WdlOB9slopJdhD+WySraMrpIY8=
+Connection: Keep-Alive
+Content-Length: 0
+
+HTTP/1.1 403 Forbidden
+X-Seen-By: dwc60INy8NFddnU/0WdlOB9slopJdhD+WySraMrpIY8=
+Connection: Keep-Alive
+Content-Length: 0]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Information gathering" port="80" protocol="tcp">
+      <INFO number="45266" severity="2">
+        <TITLE><![CDATA[Web Server HTTP Protocol Versions]]></TITLE>
+        <LAST_UPDATE><![CDATA[2024-10-02T12:23:02Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID lists supported HTTP protocol (HTTP 1.x or HTTP 2) from remote web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Remote Web Server supports HTTP version 1.x on 80 port.GET / HTTP/1.1]]></RESULT>
+      </INFO>
+      <INFO number="48118" severity="1">
+        <TITLE><![CDATA[HTTP Response Method and Header Information Collected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-07-20T12:24:23Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID prints the information, in the form of a text record, that a web server sends back to a client's browser in response to receiving a single HTTP GET request. <P>
+QID Detection Logic:<BR>
+This QID returns the HTTP response method and header information returned by a web server.<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A<P>]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A<P>]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[HTTP header and method information collected on port 80.
+
+GET / HTTP/1.1
+Host: unalocated.63.wixsite.com
+Connection: Keep-Alive
+
+
+
+HTTP/1.1 301 Moved Permanently
+Location: https://unalocated.63.wixsite.com/
+X-Seen-By: 1ev8u3tblITHmgXkyGXE9h9slopJdhD+WySraMrpIY8=
+Connection: close
+Content-Length: 0]]></RESULT>
+      </INFO>
+      <INFO number="48131" severity="1">
+        <TITLE><![CDATA[Referrer-Policy HTTP Security Header Not Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2023-01-18T13:30:56Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <VENDOR_REFERENCE_LIST>
+          <VENDOR_REFERENCE>
+            <ID><![CDATA[Referrer-Policy]]></ID>
+            <URL><![CDATA[https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy]]></URL>
+          </VENDOR_REFERENCE>
+        </VENDOR_REFERENCE_LIST>
+        <DIAGNOSIS><![CDATA[No Referrer Policy is specified for the link. It checks for one of the following Referrer Policy in the response headers:<P>
+1) no-referrer<BR>
+2) no-referrer-when-downgrade<BR>
+3) same-origin<BR>
+4) origin<BR>
+5) origin-when-cross-origin<BR>
+6) strict-origin<BR>
+7) strict-origin-when-cross-origin<BR><P>
+
+QID Detection Logic(Unauthenticated):<BR>
+If the Referrer Policy header is not found , checks in response body for meta tag containing tag name as &quot;referrer&quot; and one of the above Referrer Policy.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[The Referrer-Policy header controls how much referrer information is sent to a site when navigating to it. Absence of Referrer-Policy header can lead to leakage of sensitive information via the referrer header.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Referrer Policy header improves security by ensuring websites don't leak sensitive information via the referrer header. It's recommended to add secure Referrer Policies as a part of a defense-in-depth approach.<P>
+
+References:<BR>
+- <A HREF="https://www.w3.org/TR/referrer-policy/" TARGET="_blank">https://www.w3.org/TR/referrer-policy/</A><BR>
+- <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy" TARGET="_blank">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy</A>]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Referrer-Policy HTTP Header missing on 80 port.
+GET / HTTP/1.1
+Host: unalocated.63.wixsite.com
+Connection: Keep-Alive]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+  <SERVICES>
+    <CAT value="TCP/IP">
+      <SERVICE number="82023" severity="1">
+        <TITLE><![CDATA[Open TCP Services List]]></TITLE>
+        <LAST_UPDATE><![CDATA[2024-12-19T13:22:09Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The port scanner enables unauthorized users with the appropriate tools to draw a map of all services on this host that can be accessed from the Internet.  The test was carried out with a &quot;stealth&quot; port scanner so that the server does not log real connections.
+<P>
+The Results section displays the port number (Port), the default service listening on the port (IANA Assigned Ports/Services), the description of the service (Description) and the service that the scanner detected using service discovery (Service Detected).]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Unauthorized users can exploit this information to test vulnerabilities in each of the open services.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Shut down any unknown or unused service on the list.  If you have difficulty figuring out which service is provided by which process or program, contact your provider's support team.  For more information about commercial and open-source Intrusion Detection Systems available for detecting port scanners of this kind, visit the <A HREF="http://www.cert.org" TARGET="_blank">CERT Web site</A>.]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Port	IANA Assigned Ports/Services	Description	Service Detected	OS On Redirected Port
+80	www-http	World Wide Web HTTP	http 	 
+82	xfer	XFER Utility	unknown 	 
+443	https	http protocol over TLS/SSL	unknown over ssl	 
+445	microsoft-ds	Microsoft-DS	unknown]]></RESULT>
+      </SERVICE>
+    </CAT>
+  </SERVICES>
+  <PRACTICES>
+    <CAT value="General remote services">
+      <PRACTICE number="42432" severity="1">
+        <TITLE><![CDATA[Possible Scan Interference]]></TITLE>
+        <LAST_UPDATE><![CDATA[2022-05-25T06:42:07Z]]></LAST_UPDATE>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Possible scan interference detected.<P>
+A PCI scan must be allowed to perform scanning without interference from intrusion detection systems or intrusion prevention systems. <BR>
+The PCI ASV is required to post fail if scan interference is detected. 
+<P>
+The goal of this QID is to ensure that Active Protection Systems are not blocking, filtering, dropping or modifying network packets from a PCI Certified Scan, as such behavior could affect an ASV's ability to detect vulnerabilities. Active Protection Systems could include any of the following; IPS, WAF, Firewall, NGF, QoS Device, Spam Filter, etc. which are dynamically modifying their behavior based on info gathered from traffic patterns. This QID is triggered if a well known and popular service is not identified correctly due to possible scan interference. Services like FTP, SSH, Telnet, DNS, HTTP and Database services like MSSQL, Oracle, MySql are included.
+<P>
+-If an Active Protection System is found to be preventing the scan from completing, Merchants should make the required changes (e.g. whitelist) so that the ASV scan can complete unimpeded.
+ <P>
+-If the scan was not actively blocked, Merchants can submit a PCI False Positive/Exception Request with a statement asserting that No Active Protection System is present or blocking the scan.
+<P>
+Additionally, if there is no risk to the Cardholder Data Environment, such as no web service running, this can also be submitted as a PCI False Positive/Exception Request and reviewed per the standard PCI Workflow.
+<P>
+For more details on scan interference during a PCI scan please refer to <B>ASV Scan Interference</B> section of <A HREF="https://www.pcisecuritystandards.org/documents/ASV_Program_Guide_v3.1.pdf?agreement=true&time=1611566661151" TARGET="_blank">PCI DSS Approved Scanning Vendors Program Guide Version 3.1 July 2018 </A>.
+
+For more details about this QID, please review the following Qualys KB article:<BR>
+<A HREF="https://success.qualys.com/support/s/article/000001874#:~:text=Due%20to%20the%20above%20requirement,ASV's%20ability%20to%20detect%20vulnerabilities" TARGET="_blank"></A><P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[If the scanner cannot detect vulnerabilities on Internet-facing systems because the scan is blocked by an IDS/IPS, those vulnerabilities will remain uncorrected and may be exploited if the IDS/IPS changes or fails.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Whitelist the Qualys scanner to scan without interference from the IDS or IPS.
+<P>]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Service name: Unknown - Possible Scan Interference on TCP port 443.]]></RESULT>
+      </PRACTICE>
+    </CAT>
+  </PRACTICES>
+</IP>
+<IP value="185.230.63.171" name="unalocated.63.wixsite.com">
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="6" severity="1">
+        <TITLE><![CDATA[DNS Host Name]]></TITLE>
+        <LAST_UPDATE><![CDATA[2018-01-04T17:39:37Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The fully qualified domain name of this host, if it was obtained from a DNS server, is displayed in the RESULT section.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[IP address	Host name
+185.230.63.171	unalocated.63.wixsite.com]]></RESULT>
+      </INFO>
+      <INFO number="45006" severity="1">
+        <TITLE><![CDATA[Traceroute]]></TITLE>
+        <LAST_UPDATE><![CDATA[2003-05-09T18:28:51Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Traceroute describes the path in realtime from the scanner to the remote host being contacted. It reports the IP addresses of all the routers in between.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Hops	IP	Round Trip Time	Probe	Port
+1	140.91.212.7	0.08ms	ICMP	 
+2	43.241.189.30	1.35ms	ICMP	 
+3	43.241.189.29	1.42ms	ICMP	 
+4	114.31.192.114	142.82ms	UDP	80
+5	114.31.199.41	143.07ms	ICMP	 
+6	213.248.98.78	143.30ms	ICMP	 
+7	62.115.132.153	161.07ms	UDP	80
+8	80.239.128.3	163.53ms	ICMP	 
+9	*.*.*.*	0.00ms	Other	80
+10	185.230.63.171	160.28ms	UDP	80]]></RESULT>
+      </INFO>
+      <INFO number="45004" severity="1">
+        <TITLE><![CDATA[Target Network Information]]></TITLE>
+        <LAST_UPDATE><![CDATA[2013-08-15T21:12:37Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The information shown in the Result section was returned by the network infrastructure responsible for routing traffic from our cloud platform to the target network (where the scanner appliance is located).<P>
+This information was returned from: 1) the WHOIS service, or 2) the infrastructure provided by the closest gateway server to our cloud platform. If your ISP is routing traffic, your ISP's gateway server returned this information.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[This information can be used by malicious users to gather more information about the network infrastructure that may help in launching attacks against it.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[The network handle is: RIPE-185
+Network description:
+RIPE Network Coordination Centre]]></RESULT>
+      </INFO>
+      <INFO number="45005" severity="1">
+        <TITLE><![CDATA[Internet Service Provider]]></TITLE>
+        <LAST_UPDATE><![CDATA[2013-09-27T19:31:33Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The information shown in the Result section was returned by the network infrastructure responsible for routing traffic from our cloud platform to the target network (where the scanner appliance is located). 
+
+<P>This information was returned from: 1) the WHOIS service, or 2) the infrastructure provided by the closest gateway server to our cloud platform. If your ISP is routing traffic, your ISP's gateway server returned this information.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[This information can be used by malicious users to gather more information about the network infrastructure that may aid in launching further attacks against it.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[The ISP network handle is: DE-ARELION
+ISP Network description:
+Provider Arelion Sweden AB]]></RESULT>
+      </INFO>
+      <INFO number="45039" severity="1">
+        <TITLE><![CDATA[Host Names Found]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-08-27T03:28:53Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The following host names were discovered for this computer using various methods such as DNS look up, NetBIOS query, and SQL server name query.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Host Name	Source
+unalocated.63.wixsite.com	FQDN]]></RESULT>
+      </INFO>
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time - Scanner]]></TITLE>
+        <LAST_UPDATE><![CDATA[2022-09-15T18:02:52Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Scan duration: 2180 seconds
+
+Start time: Wed, Mar 19 2025, 06:11:50 GMT
+
+End time: Wed, Mar 19 2025, 06:48:10 GMT]]></RESULT>
+      </INFO>
+      <INFO number="45426" severity="1">
+        <TITLE><![CDATA[Scan Activity per Port]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-06-24T12:42:21Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Scan activity per port is an estimate of the amount of internal process time the scanner engine spent scanning a particular TCP or UDP port. This information can be useful to determine the reason for long scan times. The individual time values represent internal process time, not elapsed time, and can be longer than the total scan time because of internal parallelism. High values are often caused by slowly responding services or services on which requests time out.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Protocol	Port	Time
+TCP	80	 3:22:03
+TCP	82	 0:02:50
+TCP	443	 0:01:00
+TCP	445	 0:04:27]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="TCP/IP">
+      <INFO number="82040" severity="1">
+        <TITLE><![CDATA[ICMP Replies Received]]></TITLE>
+        <LAST_UPDATE><![CDATA[2003-01-16T20:14:30Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[ICMP (Internet Control and Error Message Protocol) is a protocol encapsulated in IP packets. ICMP's principal purpose is to provide a protocol layer that informs gateways of the inter-connectivity and accessibility of other gateways or hosts. 
+<P>
+We have sent the following types of packets to trigger the host to send us ICMP replies: 
+<P>
+Echo Request (to trigger Echo Reply)<br>
+Timestamp Request (to trigger Timestamp Reply)<br>
+Address Mask Request (to trigger Address Mask Reply)<br>
+UDP Packet (to trigger Port Unreachable Reply)<br>
+IP Packet with Protocol >= 250 (to trigger Protocol Unreachable Reply)
+<P>
+Listed in the "Result" section are the ICMP replies that we have received.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[ICMP Reply Type	Triggered By	Additional Information
+Unreachable (type=3 code=3)	UDP Port 1	Port Unreachable
+Echo (type=0 code=0)	Echo Request	Echo Reply
+Unreachable (type=3 code=3)	UDP Port 456	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 54489	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 4590	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 123	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 5401	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 1604	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 520	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 1028	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 5321	Port Unreachable
+Unreachable (type=3 code=9)	(Various)	Destination Network Prohibited]]></RESULT>
+      </INFO>
+      <INFO number="82046" severity="1">
+        <TITLE><![CDATA[IP ID Values Randomness]]></TITLE>
+        <LAST_UPDATE><![CDATA[2006-07-27T21:45:19Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The values for the identification (ID) field in IP headers in IP packets from the host are analyzed to determine how random they are. The changes between subsequent ID values for either the network byte ordering or the host byte ordering, whichever is smaller, are displayed in the RESULT section along with the duration taken to send the probes. When incremental values are used, as is the case for TCP/IP implementation in many operating systems, these changes reflect the network load of the host at the time this test was conducted.
+<P>
+Please note that for reliability reasons only the network traffic from open TCP ports is analyzed.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[IP ID changes observed (network order) for port 80: 31 103 886 3204 3521 4849 4939 5083 5167 6500 6875 8361 10714 12613 12783 14081 14359 16626 17974 20694 21170 24366 25095 26673 26685 28694 30345 33258 33258 
+Duration: 31 milli seconds]]></RESULT>
+      </INFO>
+      <INFO number="82063" severity="2">
+        <TITLE><![CDATA[Host Uptime Based on TCP TimeStamp Option]]></TITLE>
+        <LAST_UPDATE><![CDATA[2007-05-29T18:56:36Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The TCP/IP stack on the host supports the TCP TimeStamp (kind 8) option. Typically the timestamp used is the host's uptime (since last reboot) in various units (e.g., one hundredth of second, one tenth of a second, etc.). Based on this, we can obtain the host's uptime. The result is given in the Result section below.
+<P>
+Some operating systems (e.g., MacOS, OpenBSD) use a non-zero, probably random, initial value for the timestamp. For these operating systems, the uptime obtained does not reflect the actual uptime of the host; the former is always larger than the latter.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Based on TCP timestamps obtained via port 80, the host&apos;s uptime is 33 days, 14 hours, and 53 minutes.
+The TCP timestamps from the host are in units of 1 milliseconds.]]></RESULT>
+      </INFO>
+      <INFO number="82045" severity="1">
+        <TITLE><![CDATA[Degree of Randomness of TCP Initial Sequence Numbers]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-11-19T21:53:59Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[TCP Initial Sequence Numbers (ISNs) obtained in the SYNACK replies from the host are analyzed to determine how random they are. The average change between subsequent ISNs and the standard deviation from the average are displayed in the RESULT section. Also included is the degree of difficulty for exploitation of the TCP ISN generation scheme used by the host.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Average change between subsequent TCP initial sequence numbers is 37764470 with a standard deviation of 43971273. These TCP initial sequence numbers were triggered by TCP SYN probes sent to the host at an average rate of 1/(5091 microseconds). The degree of difficulty to exploit the TCP initial sequence number generation scheme is: hard.]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="CGI" port="80" protocol="tcp">
+      <INFO number="12230" severity="1">
+        <TITLE><![CDATA[Default Web Page]]></TITLE>
+        <LAST_UPDATE><![CDATA[2019-03-16T03:30:26Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Result section displays the default Web page for the Web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[GET / HTTP/1.1
+Host: unalocated.63.wixsite.com
+Connection: Keep-Alive
+
+
+
+HTTP/1.1 301 Moved Permanently
+Location: https://unalocated.63.wixsite.com/
+X-Seen-By: dwc60INy8NFddnU/0WdlOB9slopJdhD+WySraMrpIY8=
+Connection: close
+Content-Length: 0]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Web server" port="80" protocol="tcp">
+      <INFO number="86672" severity="1">
+        <TITLE><![CDATA[List of Web Directories]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-09-10T23:40:57Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Based largely on the HTTP reply code, the following directories are most likely present on the host.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Directory	Source
+/phorum 5.2-dev/	brute force
+/Web analytics/	brute force]]></RESULT>
+      </INFO>
+      <INFO number="86565" severity="1">
+        <TITLE><![CDATA[Web Server Supports HTTP Request Pipelining]]></TITLE>
+        <LAST_UPDATE><![CDATA[2005-02-23T00:25:38Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Version 1.1 of the HTTP protocol supports URL-Request Pipelining. This means that instead of using the &quot;Keep-Alive&quot; method to keep the TCP connection alive over multiple requests, the protocol allows multiple HTTP URL requests to be made in the same TCP packet. Any Web server which is HTTP 1.1 compliant should then process all the URLs requested in the single TCP packet and respond as usual.
+<P>
+The target Web server was found to support this functionality of the HTTP 1.1 protocol.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Support for URL-Request Pipelining has interesting consequences. For example, as explained in <A HREF="http://www.defcon.org/images/defcon-11/dc-11-presentations/dc-11-Roelker/dc-11-roelker-paper.pdf" TARGET="_blank">this paper by Daniel Roelker</A>, it can be used for evading detection by Intrusion Detection Systems. Also, it can be used in HTTP Response-Spliting style attacks.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[GET / HTTP/1.1
+Host:185.230.63.171:80
+
+GET /Q_Evasive/ HTTP/1.1
+Host:185.230.63.171:80
+
+
+
+HTTP/1.1 403 Forbidden
+X-Seen-By: ui2Pjuc3zC1HEw7V2qXeyh9slopJdhD+WySraMrpIY8=
+Connection: Keep-Alive
+Content-Length: 0
+
+HTTP/1.1 403 Forbidden
+X-Seen-By: ui2Pjuc3zC1HEw7V2qXeyh9slopJdhD+WySraMrpIY8=
+Connection: Keep-Alive
+Content-Length: 0]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Information gathering" port="80" protocol="tcp">
+      <INFO number="45266" severity="2">
+        <TITLE><![CDATA[Web Server HTTP Protocol Versions]]></TITLE>
+        <LAST_UPDATE><![CDATA[2024-10-02T12:23:02Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID lists supported HTTP protocol (HTTP 1.x or HTTP 2) from remote web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Remote Web Server supports HTTP version 1.x on 80 port.GET / HTTP/1.1]]></RESULT>
+      </INFO>
+      <INFO number="48118" severity="1">
+        <TITLE><![CDATA[HTTP Response Method and Header Information Collected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-07-20T12:24:23Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID prints the information, in the form of a text record, that a web server sends back to a client's browser in response to receiving a single HTTP GET request. <P>
+QID Detection Logic:<BR>
+This QID returns the HTTP response method and header information returned by a web server.<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A<P>]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A<P>]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[HTTP header and method information collected on port 80.
+
+GET / HTTP/1.1
+Host: unalocated.63.wixsite.com
+Connection: Keep-Alive
+
+
+
+HTTP/1.1 301 Moved Permanently
+Location: https://unalocated.63.wixsite.com/
+X-Seen-By: dwc60INy8NFddnU/0WdlOB9slopJdhD+WySraMrpIY8=
+Connection: close
+Content-Length: 0]]></RESULT>
+      </INFO>
+      <INFO number="48131" severity="1">
+        <TITLE><![CDATA[Referrer-Policy HTTP Security Header Not Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2023-01-18T13:30:56Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <VENDOR_REFERENCE_LIST>
+          <VENDOR_REFERENCE>
+            <ID><![CDATA[Referrer-Policy]]></ID>
+            <URL><![CDATA[https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy]]></URL>
+          </VENDOR_REFERENCE>
+        </VENDOR_REFERENCE_LIST>
+        <DIAGNOSIS><![CDATA[No Referrer Policy is specified for the link. It checks for one of the following Referrer Policy in the response headers:<P>
+1) no-referrer<BR>
+2) no-referrer-when-downgrade<BR>
+3) same-origin<BR>
+4) origin<BR>
+5) origin-when-cross-origin<BR>
+6) strict-origin<BR>
+7) strict-origin-when-cross-origin<BR><P>
+
+QID Detection Logic(Unauthenticated):<BR>
+If the Referrer Policy header is not found , checks in response body for meta tag containing tag name as &quot;referrer&quot; and one of the above Referrer Policy.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[The Referrer-Policy header controls how much referrer information is sent to a site when navigating to it. Absence of Referrer-Policy header can lead to leakage of sensitive information via the referrer header.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Referrer Policy header improves security by ensuring websites don't leak sensitive information via the referrer header. It's recommended to add secure Referrer Policies as a part of a defense-in-depth approach.<P>
+
+References:<BR>
+- <A HREF="https://www.w3.org/TR/referrer-policy/" TARGET="_blank">https://www.w3.org/TR/referrer-policy/</A><BR>
+- <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy" TARGET="_blank">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy</A>]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Referrer-Policy HTTP Header missing on 80 port.
+GET / HTTP/1.1
+Host: unalocated.63.wixsite.com
+Connection: Keep-Alive]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+  <SERVICES>
+    <CAT value="TCP/IP">
+      <SERVICE number="82023" severity="1">
+        <TITLE><![CDATA[Open TCP Services List]]></TITLE>
+        <LAST_UPDATE><![CDATA[2024-12-19T13:22:09Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The port scanner enables unauthorized users with the appropriate tools to draw a map of all services on this host that can be accessed from the Internet.  The test was carried out with a &quot;stealth&quot; port scanner so that the server does not log real connections.
+<P>
+The Results section displays the port number (Port), the default service listening on the port (IANA Assigned Ports/Services), the description of the service (Description) and the service that the scanner detected using service discovery (Service Detected).]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Unauthorized users can exploit this information to test vulnerabilities in each of the open services.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Shut down any unknown or unused service on the list.  If you have difficulty figuring out which service is provided by which process or program, contact your provider's support team.  For more information about commercial and open-source Intrusion Detection Systems available for detecting port scanners of this kind, visit the <A HREF="http://www.cert.org" TARGET="_blank">CERT Web site</A>.]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Port	IANA Assigned Ports/Services	Description	Service Detected	OS On Redirected Port
+80	www-http	World Wide Web HTTP	http 	 
+82	xfer	XFER Utility	unknown 	 
+443	https	http protocol over TLS/SSL	unknown over ssl	 
+445	microsoft-ds	Microsoft-DS	unknown]]></RESULT>
+      </SERVICE>
+    </CAT>
+  </SERVICES>
+  <PRACTICES>
+    <CAT value="General remote services">
+      <PRACTICE number="42432" severity="1">
+        <TITLE><![CDATA[Possible Scan Interference]]></TITLE>
+        <LAST_UPDATE><![CDATA[2022-05-25T06:42:07Z]]></LAST_UPDATE>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Possible scan interference detected.<P>
+A PCI scan must be allowed to perform scanning without interference from intrusion detection systems or intrusion prevention systems. <BR>
+The PCI ASV is required to post fail if scan interference is detected. 
+<P>
+The goal of this QID is to ensure that Active Protection Systems are not blocking, filtering, dropping or modifying network packets from a PCI Certified Scan, as such behavior could affect an ASV's ability to detect vulnerabilities. Active Protection Systems could include any of the following; IPS, WAF, Firewall, NGF, QoS Device, Spam Filter, etc. which are dynamically modifying their behavior based on info gathered from traffic patterns. This QID is triggered if a well known and popular service is not identified correctly due to possible scan interference. Services like FTP, SSH, Telnet, DNS, HTTP and Database services like MSSQL, Oracle, MySql are included.
+<P>
+-If an Active Protection System is found to be preventing the scan from completing, Merchants should make the required changes (e.g. whitelist) so that the ASV scan can complete unimpeded.
+ <P>
+-If the scan was not actively blocked, Merchants can submit a PCI False Positive/Exception Request with a statement asserting that No Active Protection System is present or blocking the scan.
+<P>
+Additionally, if there is no risk to the Cardholder Data Environment, such as no web service running, this can also be submitted as a PCI False Positive/Exception Request and reviewed per the standard PCI Workflow.
+<P>
+For more details on scan interference during a PCI scan please refer to <B>ASV Scan Interference</B> section of <A HREF="https://www.pcisecuritystandards.org/documents/ASV_Program_Guide_v3.1.pdf?agreement=true&time=1611566661151" TARGET="_blank">PCI DSS Approved Scanning Vendors Program Guide Version 3.1 July 2018 </A>.
+
+For more details about this QID, please review the following Qualys KB article:<BR>
+<A HREF="https://success.qualys.com/support/s/article/000001874#:~:text=Due%20to%20the%20above%20requirement,ASV's%20ability%20to%20detect%20vulnerabilities" TARGET="_blank"></A><P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[If the scanner cannot detect vulnerabilities on Internet-facing systems because the scan is blocked by an IDS/IPS, those vulnerabilities will remain uncorrected and may be exploited if the IDS/IPS changes or fails.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Whitelist the Qualys scanner to scan without interference from the IDS or IPS.
+<P>]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Service name: Unknown - Possible Scan Interference on TCP port 443.]]></RESULT>
+      </PRACTICE>
+    </CAT>
+  </PRACTICES>
+</IP>
+<IP value="185.230.63.186" name="unalocated.63.wixsite.com">
+  <INFOS>
+    <CAT value="Information gathering">
+      <INFO number="6" severity="1">
+        <TITLE><![CDATA[DNS Host Name]]></TITLE>
+        <LAST_UPDATE><![CDATA[2018-01-04T17:39:37Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The fully qualified domain name of this host, if it was obtained from a DNS server, is displayed in the RESULT section.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[IP address	Host name
+185.230.63.186	unalocated.63.wixsite.com]]></RESULT>
+      </INFO>
+      <INFO number="45006" severity="1">
+        <TITLE><![CDATA[Traceroute]]></TITLE>
+        <LAST_UPDATE><![CDATA[2003-05-09T18:28:51Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Traceroute describes the path in realtime from the scanner to the remote host being contacted. It reports the IP addresses of all the routers in between.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Hops	IP	Round Trip Time	Probe	Port
+1	140.91.212.29	0.10ms	ICMP	 
+2	43.241.189.30	0.91ms	ICMP	 
+3	43.241.189.29	1.46ms	ICMP	 
+4	114.31.192.114	142.92ms	UDP	80
+5	114.31.199.41	143.28ms	UDP	80
+6	213.248.98.78	143.34ms	ICMP	 
+7	62.115.132.153	160.58ms	ICMP	 
+8	80.239.128.3	163.94ms	ICMP	 
+9	*.*.*.*	0.00ms	Other	80
+10	185.230.63.186	163.89ms	ICMP]]></RESULT>
+      </INFO>
+      <INFO number="45004" severity="1">
+        <TITLE><![CDATA[Target Network Information]]></TITLE>
+        <LAST_UPDATE><![CDATA[2013-08-15T21:12:37Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The information shown in the Result section was returned by the network infrastructure responsible for routing traffic from our cloud platform to the target network (where the scanner appliance is located).<P>
+This information was returned from: 1) the WHOIS service, or 2) the infrastructure provided by the closest gateway server to our cloud platform. If your ISP is routing traffic, your ISP's gateway server returned this information.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[This information can be used by malicious users to gather more information about the network infrastructure that may help in launching attacks against it.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[The network handle is: RIPE-185
+Network description:
+RIPE Network Coordination Centre]]></RESULT>
+      </INFO>
+      <INFO number="45005" severity="1">
+        <TITLE><![CDATA[Internet Service Provider]]></TITLE>
+        <LAST_UPDATE><![CDATA[2013-09-27T19:31:33Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The information shown in the Result section was returned by the network infrastructure responsible for routing traffic from our cloud platform to the target network (where the scanner appliance is located). 
+
+<P>This information was returned from: 1) the WHOIS service, or 2) the infrastructure provided by the closest gateway server to our cloud platform. If your ISP is routing traffic, your ISP's gateway server returned this information.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[This information can be used by malicious users to gather more information about the network infrastructure that may aid in launching further attacks against it.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[The ISP network handle is: DE-ARELION
+ISP Network description:
+Provider Arelion Sweden AB]]></RESULT>
+      </INFO>
+      <INFO number="45039" severity="1">
+        <TITLE><![CDATA[Host Names Found]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-08-27T03:28:53Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The following host names were discovered for this computer using various methods such as DNS look up, NetBIOS query, and SQL server name query.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Host Name	Source
+unalocated.63.wixsite.com	FQDN]]></RESULT>
+      </INFO>
+      <INFO number="45038" severity="1">
+        <TITLE><![CDATA[Host Scan Time - Scanner]]></TITLE>
+        <LAST_UPDATE><![CDATA[2022-09-15T18:02:52Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Scan duration: 2180 seconds
+
+Start time: Wed, Mar 19 2025, 06:11:50 GMT
+
+End time: Wed, Mar 19 2025, 06:48:10 GMT]]></RESULT>
+      </INFO>
+      <INFO number="45426" severity="1">
+        <TITLE><![CDATA[Scan Activity per Port]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-06-24T12:42:21Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Scan activity per port is an estimate of the amount of internal process time the scanner engine spent scanning a particular TCP or UDP port. This information can be useful to determine the reason for long scan times. The individual time values represent internal process time, not elapsed time, and can be longer than the total scan time because of internal parallelism. High values are often caused by slowly responding services or services on which requests time out.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Protocol	Port	Time
+TCP	80	 3:22:09
+TCP	82	 0:02:50
+TCP	443	 0:01:00
+TCP	445	 0:04:27]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="TCP/IP">
+      <INFO number="82040" severity="1">
+        <TITLE><![CDATA[ICMP Replies Received]]></TITLE>
+        <LAST_UPDATE><![CDATA[2003-01-16T20:14:30Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[ICMP (Internet Control and Error Message Protocol) is a protocol encapsulated in IP packets. ICMP's principal purpose is to provide a protocol layer that informs gateways of the inter-connectivity and accessibility of other gateways or hosts. 
+<P>
+We have sent the following types of packets to trigger the host to send us ICMP replies: 
+<P>
+Echo Request (to trigger Echo Reply)<br>
+Timestamp Request (to trigger Timestamp Reply)<br>
+Address Mask Request (to trigger Address Mask Reply)<br>
+UDP Packet (to trigger Port Unreachable Reply)<br>
+IP Packet with Protocol >= 250 (to trigger Protocol Unreachable Reply)
+<P>
+Listed in the "Result" section are the ICMP replies that we have received.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[ICMP Reply Type	Triggered By	Additional Information
+Echo (type=0 code=0)	Echo Request	Echo Reply
+Unreachable (type=3 code=3)	UDP Port 15406	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 456	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 1	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 4590	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 123	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 5401	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 1604	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 520	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 1028	Port Unreachable
+Unreachable (type=3 code=3)	UDP Port 5321	Port Unreachable
+Unreachable (type=3 code=9)	(Various)	Destination Network Prohibited]]></RESULT>
+      </INFO>
+      <INFO number="82046" severity="1">
+        <TITLE><![CDATA[IP ID Values Randomness]]></TITLE>
+        <LAST_UPDATE><![CDATA[2006-07-27T21:45:19Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The values for the identification (ID) field in IP headers in IP packets from the host are analyzed to determine how random they are. The changes between subsequent ID values for either the network byte ordering or the host byte ordering, whichever is smaller, are displayed in the RESULT section along with the duration taken to send the probes. When incremental values are used, as is the case for TCP/IP implementation in many operating systems, these changes reflect the network load of the host at the time this test was conducted.
+<P>
+Please note that for reliability reasons only the network traffic from open TCP ports is analyzed.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[IP ID changes observed (network order) for port 80: 1 23 187 1647 3695 4597 7845 10999 11333 12476 15807 16173 17821 19002 19064 19152 20442 25090 25188 26226 26235 26493 26750 26952 28476 33258 33258 33258 33258 
+Duration: 33 milli seconds]]></RESULT>
+      </INFO>
+      <INFO number="82063" severity="2">
+        <TITLE><![CDATA[Host Uptime Based on TCP TimeStamp Option]]></TITLE>
+        <LAST_UPDATE><![CDATA[2007-05-29T18:56:36Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The TCP/IP stack on the host supports the TCP TimeStamp (kind 8) option. Typically the timestamp used is the host's uptime (since last reboot) in various units (e.g., one hundredth of second, one tenth of a second, etc.). Based on this, we can obtain the host's uptime. The result is given in the Result section below.
+<P>
+Some operating systems (e.g., MacOS, OpenBSD) use a non-zero, probably random, initial value for the timestamp. For these operating systems, the uptime obtained does not reflect the actual uptime of the host; the former is always larger than the latter.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Based on TCP timestamps obtained via port 80, the host&apos;s uptime is 33 days, 14 hours, and 53 minutes.
+The TCP timestamps from the host are in units of 1 milliseconds.]]></RESULT>
+      </INFO>
+      <INFO number="82045" severity="1">
+        <TITLE><![CDATA[Degree of Randomness of TCP Initial Sequence Numbers]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-11-19T21:53:59Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[TCP Initial Sequence Numbers (ISNs) obtained in the SYNACK replies from the host are analyzed to determine how random they are. The average change between subsequent ISNs and the standard deviation from the average are displayed in the RESULT section. Also included is the degree of difficulty for exploitation of the TCP ISN generation scheme used by the host.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Average change between subsequent TCP initial sequence numbers is 52074596 with a standard deviation of 36323047. These TCP initial sequence numbers were triggered by TCP SYN probes sent to the host at an average rate of 1/(5092 microseconds). The degree of difficulty to exploit the TCP initial sequence number generation scheme is: hard.]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="CGI" port="80" protocol="tcp">
+      <INFO number="12230" severity="1">
+        <TITLE><![CDATA[Default Web Page]]></TITLE>
+        <LAST_UPDATE><![CDATA[2019-03-16T03:30:26Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The Result section displays the default Web page for the Web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[GET / HTTP/1.1
+Host: unalocated.63.wixsite.com
+Connection: Keep-Alive
+
+
+
+HTTP/1.1 301 Moved Permanently
+Location: https://unalocated.63.wixsite.com/
+X-Seen-By: 9WD8GAcpJgs/Ng1WkD2i0h9slopJdhD+WySraMrpIY8=
+Connection: close
+Content-Length: 0]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Web server" port="80" protocol="tcp">
+      <INFO number="86672" severity="1">
+        <TITLE><![CDATA[List of Web Directories]]></TITLE>
+        <LAST_UPDATE><![CDATA[2004-09-10T23:40:57Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Based largely on the HTTP reply code, the following directories are most likely present on the host.]]></DIAGNOSIS>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Directory	Source
+/phorum 5.2-dev/	brute force
+/Web analytics/	brute force]]></RESULT>
+      </INFO>
+      <INFO number="86565" severity="1">
+        <TITLE><![CDATA[Web Server Supports HTTP Request Pipelining]]></TITLE>
+        <LAST_UPDATE><![CDATA[2005-02-23T00:25:38Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Version 1.1 of the HTTP protocol supports URL-Request Pipelining. This means that instead of using the &quot;Keep-Alive&quot; method to keep the TCP connection alive over multiple requests, the protocol allows multiple HTTP URL requests to be made in the same TCP packet. Any Web server which is HTTP 1.1 compliant should then process all the URLs requested in the single TCP packet and respond as usual.
+<P>
+The target Web server was found to support this functionality of the HTTP 1.1 protocol.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Support for URL-Request Pipelining has interesting consequences. For example, as explained in <A HREF="http://www.defcon.org/images/defcon-11/dc-11-presentations/dc-11-Roelker/dc-11-roelker-paper.pdf" TARGET="_blank">this paper by Daniel Roelker</A>, it can be used for evading detection by Intrusion Detection Systems. Also, it can be used in HTTP Response-Spliting style attacks.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[GET / HTTP/1.1
+Host:185.230.63.186:80
+
+GET /Q_Evasive/ HTTP/1.1
+Host:185.230.63.186:80
+
+
+
+HTTP/1.1 403 Forbidden
+X-Seen-By: xIKq3IotbbLp4+7DTTMx8R9slopJdhD+WySraMrpIY8=
+Connection: Keep-Alive
+Content-Length: 0
+
+HTTP/1.1 403 Forbidden
+X-Seen-By: xIKq3IotbbLp4+7DTTMx8R9slopJdhD+WySraMrpIY8=
+Connection: Keep-Alive
+Content-Length: 0]]></RESULT>
+      </INFO>
+    </CAT>
+    <CAT value="Information gathering" port="80" protocol="tcp">
+      <INFO number="45266" severity="2">
+        <TITLE><![CDATA[Web Server HTTP Protocol Versions]]></TITLE>
+        <LAST_UPDATE><![CDATA[2024-10-02T12:23:02Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID lists supported HTTP protocol (HTTP 1.x or HTTP 2) from remote web server.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Remote Web Server supports HTTP version 1.x on 80 port.GET / HTTP/1.1]]></RESULT>
+      </INFO>
+      <INFO number="48118" severity="1">
+        <TITLE><![CDATA[HTTP Response Method and Header Information Collected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2020-07-20T12:24:23Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[This QID prints the information, in the form of a text record, that a web server sends back to a client's browser in response to receiving a single HTTP GET request. <P>
+QID Detection Logic:<BR>
+This QID returns the HTTP response method and header information returned by a web server.<P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[N/A<P>]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[N/A<P>]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[HTTP header and method information collected on port 80.
+
+GET / HTTP/1.1
+Host: unalocated.63.wixsite.com
+Connection: Keep-Alive
+
+
+
+HTTP/1.1 301 Moved Permanently
+Location: https://unalocated.63.wixsite.com/
+X-Seen-By: 9WD8GAcpJgs/Ng1WkD2i0h9slopJdhD+WySraMrpIY8=
+Connection: close
+Content-Length: 0]]></RESULT>
+      </INFO>
+      <INFO number="48131" severity="1">
+        <TITLE><![CDATA[Referrer-Policy HTTP Security Header Not Detected]]></TITLE>
+        <LAST_UPDATE><![CDATA[2023-01-18T13:30:56Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <VENDOR_REFERENCE_LIST>
+          <VENDOR_REFERENCE>
+            <ID><![CDATA[Referrer-Policy]]></ID>
+            <URL><![CDATA[https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy]]></URL>
+          </VENDOR_REFERENCE>
+        </VENDOR_REFERENCE_LIST>
+        <DIAGNOSIS><![CDATA[No Referrer Policy is specified for the link. It checks for one of the following Referrer Policy in the response headers:<P>
+1) no-referrer<BR>
+2) no-referrer-when-downgrade<BR>
+3) same-origin<BR>
+4) origin<BR>
+5) origin-when-cross-origin<BR>
+6) strict-origin<BR>
+7) strict-origin-when-cross-origin<BR><P>
+
+QID Detection Logic(Unauthenticated):<BR>
+If the Referrer Policy header is not found , checks in response body for meta tag containing tag name as &quot;referrer&quot; and one of the above Referrer Policy.]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[The Referrer-Policy header controls how much referrer information is sent to a site when navigating to it. Absence of Referrer-Policy header can lead to leakage of sensitive information via the referrer header.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Referrer Policy header improves security by ensuring websites don't leak sensitive information via the referrer header. It's recommended to add secure Referrer Policies as a part of a defense-in-depth approach.<P>
+
+References:<BR>
+- <A HREF="https://www.w3.org/TR/referrer-policy/" TARGET="_blank">https://www.w3.org/TR/referrer-policy/</A><BR>
+- <A HREF="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy" TARGET="_blank">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy</A>]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Referrer-Policy HTTP Header missing on 80 port.
+GET / HTTP/1.1
+Host: unalocated.63.wixsite.com
+Connection: Keep-Alive]]></RESULT>
+      </INFO>
+    </CAT>
+  </INFOS>
+  <SERVICES>
+    <CAT value="TCP/IP">
+      <SERVICE number="82023" severity="1">
+        <TITLE><![CDATA[Open TCP Services List]]></TITLE>
+        <LAST_UPDATE><![CDATA[2024-12-19T13:22:09Z]]></LAST_UPDATE>
+        <PCI_FLAG>0</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[The port scanner enables unauthorized users with the appropriate tools to draw a map of all services on this host that can be accessed from the Internet.  The test was carried out with a &quot;stealth&quot; port scanner so that the server does not log real connections.
+<P>
+The Results section displays the port number (Port), the default service listening on the port (IANA Assigned Ports/Services), the description of the service (Description) and the service that the scanner detected using service discovery (Service Detected).]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[Unauthorized users can exploit this information to test vulnerabilities in each of the open services.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Shut down any unknown or unused service on the list.  If you have difficulty figuring out which service is provided by which process or program, contact your provider's support team.  For more information about commercial and open-source Intrusion Detection Systems available for detecting port scanners of this kind, visit the <A HREF="http://www.cert.org" TARGET="_blank">CERT Web site</A>.]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT format="table"><![CDATA[Port	IANA Assigned Ports/Services	Description	Service Detected	OS On Redirected Port
+80	www-http	World Wide Web HTTP	http 	 
+82	xfer	XFER Utility	unknown 	 
+443	https	http protocol over TLS/SSL	unknown over ssl	 
+445	microsoft-ds	Microsoft-DS	unknown]]></RESULT>
+      </SERVICE>
+    </CAT>
+  </SERVICES>
+  <PRACTICES>
+    <CAT value="General remote services">
+      <PRACTICE number="42432" severity="1">
+        <TITLE><![CDATA[Possible Scan Interference]]></TITLE>
+        <LAST_UPDATE><![CDATA[2022-05-25T06:42:07Z]]></LAST_UPDATE>
+        <PCI_FLAG>1</PCI_FLAG>
+        <DIAGNOSIS><![CDATA[Possible scan interference detected.<P>
+A PCI scan must be allowed to perform scanning without interference from intrusion detection systems or intrusion prevention systems. <BR>
+The PCI ASV is required to post fail if scan interference is detected. 
+<P>
+The goal of this QID is to ensure that Active Protection Systems are not blocking, filtering, dropping or modifying network packets from a PCI Certified Scan, as such behavior could affect an ASV's ability to detect vulnerabilities. Active Protection Systems could include any of the following; IPS, WAF, Firewall, NGF, QoS Device, Spam Filter, etc. which are dynamically modifying their behavior based on info gathered from traffic patterns. This QID is triggered if a well known and popular service is not identified correctly due to possible scan interference. Services like FTP, SSH, Telnet, DNS, HTTP and Database services like MSSQL, Oracle, MySql are included.
+<P>
+-If an Active Protection System is found to be preventing the scan from completing, Merchants should make the required changes (e.g. whitelist) so that the ASV scan can complete unimpeded.
+ <P>
+-If the scan was not actively blocked, Merchants can submit a PCI False Positive/Exception Request with a statement asserting that No Active Protection System is present or blocking the scan.
+<P>
+Additionally, if there is no risk to the Cardholder Data Environment, such as no web service running, this can also be submitted as a PCI False Positive/Exception Request and reviewed per the standard PCI Workflow.
+<P>
+For more details on scan interference during a PCI scan please refer to <B>ASV Scan Interference</B> section of <A HREF="https://www.pcisecuritystandards.org/documents/ASV_Program_Guide_v3.1.pdf?agreement=true&time=1611566661151" TARGET="_blank">PCI DSS Approved Scanning Vendors Program Guide Version 3.1 July 2018 </A>.
+
+For more details about this QID, please review the following Qualys KB article:<BR>
+<A HREF="https://success.qualys.com/support/s/article/000001874#:~:text=Due%20to%20the%20above%20requirement,ASV's%20ability%20to%20detect%20vulnerabilities" TARGET="_blank"></A><P>]]></DIAGNOSIS>
+        <CONSEQUENCE><![CDATA[If the scanner cannot detect vulnerabilities on Internet-facing systems because the scan is blocked by an IDS/IPS, those vulnerabilities will remain uncorrected and may be exploited if the IDS/IPS changes or fails.]]></CONSEQUENCE>
+        <SOLUTION><![CDATA[Whitelist the Qualys scanner to scan without interference from the IDS or IPS.
+<P>]]></SOLUTION>
+        <CORRELATION>
+          <EXPLOITABILITY />
+          <MALWARE />
+        </CORRELATION>
+        <RESULT><![CDATA[Service name: Unknown - Possible Scan Interference on TCP port 443.]]></RESULT>
+      </PRACTICE>
+    </CAT>
+  </PRACTICES>
+</IP>
+</SCAN>
+<!-- CONFIDENTIAL AND PROPRIETARY INFORMATION. Qualys provides it's Service "As Is," without any warranty of any kind. Qualys makes no warranty that the information contained in this report is complete or error-free. Copyright 2025, Qualys, Inc. //--> 
